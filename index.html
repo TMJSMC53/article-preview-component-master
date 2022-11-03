@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="container">
+    <picture>
+      <img class="img" src="/images/drawers.jpg" alt="">
+    </picture>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <section class="content">
+      <h1 class="content__title fs-500 fw-bold text-dk-grayish">Shift the overall look and feel by adding these
+        wonderful
+        touches to furniture in your home</h1>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+      <p class="content__description text-dk-blue fw-regular">Ever been in a room and felt like something was missing?
+        Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.</p>
 
-  Michelle Appleton
-  28 Jun 2020
+      <section class="content__footer">
+        <div class="content__footer--body">
+          <img class="avatar" src="/images/avatar-michelle.jpg" alt="">
+          <h2 class="content__footer--name fw-bold">Michelle Appleton</h2>
+          <span class="date">28 Jun 2020</span>
+        </div>
+        <div class="content__footer--share-btn">
+          <img class="share-btn" src="/images/icon-share.svg" alt="">
+        </div>
+        <div class="active hidden">
+          <span class="active__icon light">Share</span>
+          <div class="active__content">
+            <img src="/images/icon-facebook.svg" alt="Facebook icon" class="active__icon">
+            <img src="/images/icon-twitter.svg" alt="Twitter icon" class="active__icon">
+            <img src="/images/icon-pinterest.svg" alt="Pinterest icon" class="active__icon">
+          </div>
+          <div class="active__btn">
+            <img src="/images/icon-share.svg" alt="Share button">
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
+
+
+
+
+
 
   Share
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="#https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
