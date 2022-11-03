@@ -37,7 +37,7 @@ ol[role="list"] {
 
 /* Set core root defaults */
 html:focus-within {
-  scroll-behavior: smooth;
+  font-family: "scroll-behavior: smooth", sans-serif;
 }
 
 html,
@@ -58,11 +58,6 @@ body {
   font-style: medium;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
 /* Make images easier to work with */
 img,
 picture,
@@ -78,7 +73,7 @@ a {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-    scroll-behavior: auto;
+    font-family: "scroll-behavior: smooth", sans-serif;
   }
 
   *,
@@ -87,7 +82,7 @@ a {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    font-family: "scroll-behavior: smooth", sans-serif !important;
   }
 }
 
